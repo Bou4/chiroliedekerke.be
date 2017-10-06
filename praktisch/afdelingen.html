@@ -26,4 +26,26 @@ layout: default
         </nav>
     </div>
 </section>
-
+<section class="section">
+    <div class="container">
+        {% for afdeling in site.data.afdelingen %}
+        <div class="columns">
+            <div class="column is-4">
+                <h1 class="title">{{ afdeling.naam }}</h1>
+                <p class="has-text-justified">
+                {{ afdeling.beschrijving }}
+                </p>
+            </div>
+            <div class="column is-8">
+                <div class="columns is-multiline">
+                    {% for leider in afdeling.leiding %}
+                    <div class="column is-4">
+                        {% include person.html name=leider.naam telephone=leider.telefoon email=leider.email facebook=leider.facebook %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>

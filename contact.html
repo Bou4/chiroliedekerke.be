@@ -17,72 +17,10 @@ layout: default
     <div class="container">
         <div class="columns">
             <div class="column is-4 is-offset-4">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-4">Caro Meysmans</p>
-                                <p class="subtitle is-6">Groepsleiding</p>
-                            </div>
-                        </div>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="tel:" class="card-footer-item">
-                            <span class="icon">
-                                <i class="fa fa-phone"></i>
-                            </span>
-                        </a>
-                        <a href="mailto:" class="card-footer-item">
-                            <span class="icon">
-                                <i class="fa fa-envelope"></i>
-                            </span>
-                        </a>
-                        <a href="#" class="card-footer-item">
-                            <span class="icon">
-                                <i class="fa fa-facebook"></i>
-                            </span>
-                        </a>
-                    </footer>
-                </div>
+                {% include person.html name="Caro Meysmans" %}
             </div>
             <div class="column is-4">
-                <div class="card">
-                    <div class="card-image">
-                        <figure class="image is-4by3">
-                            <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
-                        </figure>
-                    </div>
-                    <div class="card-content">
-                        <div class="media">
-                            <div class="media-content">
-                                <p class="title is-4">Pieter De Geest</p>
-                                <p class="subtitle is-6">Groepsleiding</p>
-                            </div>
-                        </div>
-                    </div>
-                    <footer class="card-footer">
-                        <a href="tel:" class="card-footer-item">
-                            <span class="icon">
-                                <i class="fa fa-phone"></i>
-                            </span>
-                        </a>
-                        <a href="mailto:" class="card-footer-item">
-                            <span class="icon">
-                                <i class="fa fa-envelope"></i>
-                            </span>
-                        </a>
-                        <a href="#" class="card-footer-item">
-                            <span class="icon">
-                                <i class="fa fa-facebook"></i>
-                            </span>
-                        </a>
-                    </footer>
-                </div>
+                {% include person.html name="Pieter De Geest" %}
             </div>
         </div>
         <div class="columns">

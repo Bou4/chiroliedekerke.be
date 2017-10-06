@@ -1,0 +1,31 @@
+<div class="card">
+    <div class="card-image">
+        <figure class="image is-4by3">
+            <img src="http://bulma.io/images/placeholders/1280x960.png" alt="Image">
+        </figure>
+    </div>
+    <div class="card-content">
+        <div class="media">
+            <div class="media-content">
+                <p class="title is-4">{{ include.name }}</p>
+            </div>
+        </div>
+    </div>
+    <footer class="card-footer">
+        <a href="tel:{{ include.telephone }}" class="card-footer-item">
+            <span class="icon">
+                <i class="fa fa-phone"></i>
+            </span>
+        </a>
+        <a href="mailto:{{ include.email }}" class="card-footer-item">
+            <span class="icon">
+                <i class="fa fa-envelope"></i>
+            </span>
+        </a>
+        <a href="https://www.facebook.com/{{ include.facebook }}" class="card-footer-item">
+            <span class="icon">
+                <i class="fa fa-facebook"></i>
+            </span>
+        </a>
+    </footer>
+</div>
