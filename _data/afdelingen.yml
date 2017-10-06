@@ -1,4 +1,5 @@
-- naam: "Speelclub"
+speelclub:
+  naam: "Speelclub"
   beschrijving: "De 6- tot 10-jarigen houden van spelen, zo simpel is dat! Ze ontdekken de wereld en zijn onnoemelijk nieuwsgierig. Ze dollen en rennen door het bos, verkleden zich en kruipen allemaal samen voor of zelfs in de poppenkast. Of ze trekken eropuit voor een tocht vol spelletjes, plezante liedjes en gekke opdrachten. Ze worden ook al wat mondiger: de leiding zal het geweten hebben! Bij de speelclub leren kinderen al wat meer samen spelen. Vriendschappen (en kliekjes!) ontstaan, banden worden gesmeed."
   leiding:
   - naam: "Lien Van Den Brande"
@@ -33,7 +34,8 @@
     telefoon: "0470 35 01 86"
     email: "lukas.asselman@hotmail.com"
     facebook: "lukas.asselman"
-- naam: "Rakwi's"
+rakwi:
+  naam: "Rakwi's"
   beschrijving: "De 11- tot 12-jarigen hangen samen met hun rakwileiding de aap uit. Ze ravotten zich te pletter, trekken eropuit met de fiets en lopen zich de ziel uit het lijf bij een supergroot bosspel. Soms maken ze de gekste creaturen in klei en verkleden ze zich in monsters en draken. Regen en wind houden hen niet tegen om buiten te ravotten. Het liefst springen ze dan nog in een grote plas om lekker vuil te worden. Rakwi’s zijn sterk in het verzamelen van heel wat speledingen, waarmee de leiding toffe spelen verzint."
   leiding:
   - naam: "Luna Corthals"
@@ -60,7 +62,8 @@
     telefoon: "0471 40 60 58"
     email: "steijedereuse@icloud.com"
     facebook: "steije.dereuse"
-- naam: "Tito's"
+tito:
+  naam: "Tito's"
   beschrijving: "De 13- tot 14-jarigen trekken eropuit met de fiets of met de trein om in de een of andere stad een groot zoekspel te doen. Keihard ertegenaan gaan in een pleinspel en graag winnen, door tactiek of door snelheid. Stilvallen om de laatste stand van zaken in voetballand te bespreken of te zwijmelen over een superster of over die ene knappe jongen van op school, hoort erbij. Ze schminken zich om het gekst voor een show en zomerse zondagen eindigen steevast in een waterfestijn. De sjiekste Chiromomenten worden natuurlijk vastgelegd op sociale media. Kortom: typisch tito’s."
   leiding:
   - naam: "Narany De Pever"
@@ -87,7 +90,8 @@
     telefoon: "0471 24 35 79"
     email: "rodnasandor@gmail.com"
     facebook: "rodney.sandor"
-- naam: "Keti's"
+keti:
+  naam: "Keti's"
   beschrijving: "De 15- tot 16-jarigen trekken op avontuur, doen een tweedaagse tocht in de natuur met de rugzak of bouwen zelf een vlot om de rivier over te steken. Ze beulen zich af in een zelfverzonnen sport, of zetten hun lokaal volledig op z’n kop om het een nieuwe look te geven. Tijdens het vieruurtje tonen ze de nieuwste danspasjes op een minifuif voor maxipret. "
   leiding:
   - naam: "Ceres De Rycke"
@@ -114,5 +118,6 @@
     telefoon: "0486 83 82 50"
     email: "caro.meysmans@gmail.com"
     facebook: "caro.meysmans"
-- naam: "Aspi's"
+aspi:
+  naam: "Aspi's"
   beschrijving: "De 17- tot 18-jarigen neemt het er goed van en wisselt hevige spelen af met stevige babbels in het gezelligste hoekje van het lokaal. Af en toe staan ze stil bij ‘leiding zijn’ of proeven ze van het leiden van een jongere afdeling. Soms organiseren ze zelf een aspifuif of leven ze een week op de Chiro tijdens een leefweek. Op bivak gaan ze misschien zelfs op driedaagse! Kortom: de aspi-jaren zijn de kers op de taart van jaren lid zijn bij de Chiro!"

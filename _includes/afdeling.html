@@ -1,6 +1,3 @@
----
-layout: default
----
 <section class="hero is-primary">
     <div class="hero-body">
         <div class="container">
@@ -16,11 +13,21 @@ layout: default
         <nav class="tabs is-boxed is-fullwidth">
             <div class="container">
                 <ul>
-                    <li class="is-active"><a>Speelclub</a></li>
-                    <li><a>Rakwi's</a></li>
-                    <li><a>Tito's</a></li>
-                    <li><a>Keti's</a></li>
-                    <li><a>Aspi's</a></li>
+                    <li {% if include.afdeling == "speelclub" %} class="is-active"{% endif %}>
+                        <a href="{{ base }}/praktisch/afdelingen/speelclub.html">Speelclub</a>
+                    </li>
+                    <li {% if include.afdeling == "rakwi" %} class="is-active"{% endif %}>
+                        <a href="{{ base }}/praktisch/afdelingen/rakwi.html">Rakwi's</a>
+                    </li>
+                    <li {% if include.afdeling == "tito" %} class="is-active"{% endif %}>
+                        <a href="{{ base }}/praktisch/afdelingen/tito.html">Tito's</a>
+                    </li>
+                    <li {% if include.afdeling == "keti" %} class="is-active"{% endif %}>
+                        <a href="{{ base }}/praktisch/afdelingen/keti.html">Keti's</a>
+                    </li>
+                    <li {% if include.afdeling == "aspi" %} class="is-active"{% endif %}>
+                        <a href="{{ base }}/praktisch/afdelingen/aspi.html">Aspi's</a>
+                    </li>
                 </ul>
             </div>
         </nav>
@@ -28,7 +35,7 @@ layout: default
 </section>
 <section class="section">
     <div class="container">
-        {% for afdeling in site.data.afdelingen %}
+        {% assign afdeling = site.data.afdelingen[include.afdeling] %}
         <div class="columns">
             <div class="column is-4">
                 <h1 class="title">{{ afdeling.naam }}</h1>
@@ -46,6 +53,5 @@ layout: default
                 </div>
             </div>
         </div>
-        {% endfor %}
     </div>
 </section>
