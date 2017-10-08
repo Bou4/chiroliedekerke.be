@@ -2,7 +2,7 @@
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item" href="{{ base }}">
-                Chiro Liedekerke
+                {{ site.title }}
             </a>
             <div class="navbar-burger" data-target="navbar-mobile">
                 <span></span>
@@ -14,58 +14,26 @@
             <div class="navbar-start">
             </div>
             <div class="navbar-end">
-                <a class="navbar-item">
-                    Nieuws
-                </a>
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        Praktisch
-                    </a>
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item" href="{{ base }}/praktisch/afdelingen/speelclub.html">
-                            Afdelingen
-                        </a>
-                        <a class="navbar-item">
-                            Locatie
-                        </a>
-                        <a class="navbar-item">
-                            Uniform
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item">
-                            Binnenlands Bivak
-                        </a>
-                        <a class="navbar-item">
-                            Buitenlands Bivak
-                        </a>
-                    </div>
-                </div>
-                <a class="navbar-item" href="{{ base }}/onder_ons.html">
-                    Onder Ons
-                </a>
-                <a class="navbar-item">
-                    Fotogalerij
-                </a>
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link">
-                        Inschrijven
-                    </a>
-                    <div class="navbar-dropdown">
-                        <a class="navbar-item" href="{{ base }}/inschrijven/lidmaatschap.html">
-                            Lidmaatschap
-                        </a>
-                        <hr class="navbar-divider">
-                        <div class="navbar-item">
-                            Binnenlands Bivak
+                {% for item in site.data.navbar.items %}
+                    {% if item.subitems %}
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                {{ item.title }}
+                            </a>
+                            <div class="navbar-dropdown">
+                                {% for subitem in item.subitems %}
+                                    <a class="navbar-item" href="{{ base }}{{ subitem.url }}">
+                                        {{ subitem.title }}
+                                    </a>
+                                {% endfor %}
+                            </div>
                         </div>
-                        <div class="navbar-item">
-                            Buitenlands Bivak
-                        </div>
-                    </div>
-                </div>
-                <a class="navbar-item" href="{{ base }}/contact.html">
-                    Contact
-                </a>
+                    {% else %}
+                        <a class="navbar-item" href="{{base}}{{ item.url }}">
+                            {{ item.title }}
+                        </a>
+                    {% endif %}
+                {% endfor %}
             </div>
         </div>
     </div>
