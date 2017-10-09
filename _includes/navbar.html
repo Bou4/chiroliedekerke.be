@@ -2,7 +2,7 @@
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item" href="{{ base }}">
-                {{ site.title }}
+                {{ include.title }}
             </a>
             <div class="navbar-burger" data-target="navbar-mobile">
                 <span></span>
@@ -12,7 +12,7 @@
         </div>
         <div id="navbar-mobile" class="navbar-menu">
             <div class="navbar-end">
-                {% for item in site.data.navbar.items %}
+                {% for item in include.items %}
                     {% if item.subitems %}
                         <div class="navbar-item has-dropdown is-hoverable">
                             <a class="navbar-link">
@@ -27,7 +27,7 @@
                             </div>
                         </div>
                     {% else %}
-                        <a class="navbar-item" href="{{base}}{{ item.url }}">
+                        <a class="navbar-item" href="{{ base }}{{ item.url }}">
                             {{ item.title }}
                         </a>
                     {% endif %}

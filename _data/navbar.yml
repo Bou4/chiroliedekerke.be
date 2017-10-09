@@ -1,7 +1,7 @@
 items:
 - title: "Nieuws"
   subtitle: "De laatste nieuwtjes in Chiroland!"
-  url: "/index.html"
+  url: "/"
 - title: "Praktisch"
   subitems:
     - title: "Afdelingen"
