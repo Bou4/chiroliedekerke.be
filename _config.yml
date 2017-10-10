@@ -24,7 +24,7 @@ url: "https://chiroliedekerke.be" # the base hostname & protocol for your site, 
 collections:
   afdelingen:
     output: true
-    permalink: /praktisch/:collection/:name
+    permalink: /praktisch/:collection/:path
 
 # Build settings
 markdown: kramdown

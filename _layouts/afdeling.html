@@ -18,7 +18,7 @@ subtitle: "We kunnen ze niet allemaal bij elkaar proppen..."
                 <div class="columns is-multiline">
                     {% for leider in site.data.leiding[page.name] %}
                     <div class="column is-4">
-                        {% include person.html name=leider.naam telephone=leider.telefoon email=leider.email facebook=leider.facebook %}
+                        {% include person.html name = leider.naam telephone = leider.telefoon email = leider.email facebook = leider.facebook %}
                     </div>
                     {% endfor %}
                 </div>
