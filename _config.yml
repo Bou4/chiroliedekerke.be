@@ -20,6 +20,12 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://chiroliedekerke.be" # the base hostname & protocol for your site, e.g. http://example.com
 
+# Collections
+collections:
+  afdelingen:
+    output: true
+    permalink: /praktisch/:collection/:name
+
 # Build settings
 markdown: kramdown
 

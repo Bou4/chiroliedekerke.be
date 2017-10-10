@@ -15,7 +15,7 @@
             <div class="container">
                 <ul>
                     {% for tab in include.tabs %}
-                    <li {% if forloop.index == include.tab %} class="is-active" {% endif %}>
+                    <li {% if page.url == tab.url %} class="is-active" {% endif %}>
                         <a href="{{ base }}{{ tab.url }}">{{ tab.title }}</a>
                     </li>
                     {% endfor %}

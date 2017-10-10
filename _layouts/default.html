@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>{{ site.title }}</title>
+    <title>{{ site.title }} - {{ page.title }}</title>
 
     {% include base.html %}
 
@@ -13,32 +13,6 @@
 </head>
 <body>
     {% include navbar.html title = site.title items = site.data.navbar.items %}
-
-    {% for item in site.data.navbar.items %}
-        {% if item.subitems %}
-            {% for subitem in item.subitems %}
-                {% if subitem.tabs %}
-                    {% for tab in subitem.tabs %}
-                        {% if tab.url == page.url %}
-                            {% assign current_item = subitem %}
-                            {% assign current_tab = forloop.index %}
-                            {% assign current_tabs = subitem.tabs %}
-                        {% endif %}
-                    {% endfor %}
-                {% else %}
-                    {% if subitem.url == page.url %}
-                        {% assign current_item = subitem %}
-                    {% endif %}
-                {% endif %}
-            {% endfor %}
-        {% else %}
-            {% if item.url == page.url %}
-                {% assign current_item = item %}
-            {% endif %}
-        {% endif %}
-    {% endfor %}
-
-    {% include hero.html title = current_item.title subtitle = current_item.subtitle tabs = current_tabs tab = current_tab %}
 
     {{ content }}
 
