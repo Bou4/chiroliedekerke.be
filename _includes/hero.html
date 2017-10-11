@@ -16,7 +16,7 @@
                 <ul>
                     {% for tab in include.tabs %}
                     <li {% if page.url == tab.url %} class="is-active" {% endif %}>
-                        <a href="{{ tab.url }}">{{ tab.title }}</a>
+                        <a href="{{ tab.url | relative_url }}">{{ tab.title }}</a>
                     </li>
                     {% endfor %}
                 </ul>
