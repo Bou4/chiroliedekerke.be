@@ -17,8 +17,8 @@ title: Chiro Liedekerke
 email: info@chiroliedekerke.be
 description: > # this means to ignore newlines until "baseurl:"
   Chiro Liedekerke is een knotsgekke jeugdbeweging die zich elke zondag huist in De Bokaal.
-baseurl: "/website" # the subpath of your site, e.g. /blog
-url: "https://chiro-liedekerke.gitlab.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/chiroliedekerke.be" # the subpath of your site, e.g. /blog
+url: "https://bou4.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Collections
 collections:
